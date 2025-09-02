@@ -1,0 +1,32 @@
+### classes
+# class player:
+#     max_hp = 4000
+
+# player1 = player()
+# print(player1.max_hp)
+# player2 = player()
+# print(player2.max_hp)
+
+# player.max_hp = 5000
+# print(player2.max_hp)
+# print(player1.max_hp)
+
+
+# ##instance attributes
+class Player:
+    def __init__(self, name, hp):
+        self.name = name
+        self.hp = hp
+        self.score = 0
+
+player1 = Player("Aaron", 1200)
+player2 = Player("Irene", 1300)
+
+print("P1:", player1.name, "-- HP;", player1.hp, "-- SCORE: ",player1.score)
+print("P1:", player2.name, "-- HP;", player2.hp, "-- SCORE: ",player2.score)
+
+player1.hp += 500
+player1.score += 50
+
+print("P1:", player1.name, "-- HP;", player1.hp, "-- SCORE: ",player1.score)
+print("P1:", player2.name, "-- HP;", player2.hp, "-- SCORE: ",player2.score)
